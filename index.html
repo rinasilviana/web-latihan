@@ -9,12 +9,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-5oVJQoYrV7uFk5yB1Wr3J6LsKJbdJpAg2lhIfApdpAB+Nz8MC3fCwzv0LULUO6YoWvKpx9WzJ0fx8w4Fw3keWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
+    <nav class="navbar navbar-expand-lg shadow-lg fixed-top" style="background-color: #0d6efd;">
+
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><i class="fas fa-school"></i> SMKN 4 TASIKMALAYA</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +28,9 @@
              <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#jurusan"><i class="fas fa-home"></i>jurusan</a>
             </li>
+             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#guru"><i class="fas fa-home"></i>Guru</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link active" href="#galeri"><i class="fas fa-image"></i> Galeri</a>
             </li>
@@ -33,8 +39,8 @@
                 <i class="fas fa-user"></i> Profil
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#"><i class="fas fa-history"></i> Sejarah</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fas fa-bullseye"></i> Visi & Misi</a></li>
+                <li><a class="dropdown-item" href="#sejarah"><i class="fas fa-bullseye"></i>Sejarah</a></li>
+                 <li><a class="dropdown-item" href="#"><i class="fas fa-bullseye"></i> Visi & Misi</a></li>
               </ul>
             </li>
           </ul>
@@ -50,6 +56,7 @@
           <button type="button" class="btn btn-danger btn-lg"><i class="fas fa-save"></i>Kunjungi</button>
         </a>
       </div>
+    </div>
     </div>
     <div class="container-fluid jurusan pt-5 pb-5">
       <div class="container text-center">
@@ -82,147 +89,232 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid pt-5 pb-5 bg-light">
-      <div class="container text-center">
-      <h2 class="display-3" id="galeri">Galeri</h2>
-     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic eius nam quasi, repudiandae voluptas obcaecati?</p>
-      <div class="row pt-4 gx-4 gy-4">
-       <div class="col-md-4">
-        <div class="card crop-img">
-    <img src="image/dua.jpg" class="card-img-top" alt="Gambar Galeri" width="200" height="200">
-    <div class="card-body">
-    <h5 class="card-title">Lorem, ipsum.</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error?</p>
-     </div>
+<div class="container-fluid pt-5 pb-5 bg-light">
+  <div class="container text-center">
+    <h2 class="display-3" id="galeri">Galeri</h2>
+    <p>
+      Galeri ini menampilkan berbagai dokumentasi kegiatan siswa, guru, dan seluruh civitas sekolah yang mencerminkan semangat belajar, kreativitas, kebersamaan, serta prestasi di lingkungan SMK Negeri 4 Tasikmalaya. Setiap momen menjadi bagian dari perjalanan dalam membentuk generasi yang berkarakter dan berkompetensi.
+    </p>
+
+  <div class="row pt-4 gx-4 gy-4">
+  
+  <div class="col-md-4">
+    <div class="card">
+      <img src="image/galei/upacara.jpg" class="card-img-top crop-img" alt="Upacara Bendera">
+      <div class="card-body">
+        <h5 class="card-title">Upacara Bendera</h5>
+        <p class="card-text">Suasana upacara bendera rutin hari Senin yang diikuti seluruh warga sekolah.</p>
       </div>
     </div>
-         <div class="col-md-4">
-        <div class="card crop-img">
-    <img src="image/dua.jpg" class="card-img-top" alt="Gambar Galeri" width="200" height="200">
-    <div class="card-body">
-    <h5 class="card-title">Lorem, ipsum.</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error?</p>
-     </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <img src="image/galei/2.jpg" class="card-img-top crop-img" alt="Kegiatan Praktikum">
+      <div class="card-body">
+        <h5 class="card-title">Kegiatan Praktikum</h5>
+        <p class="card-text">Siswa sedang melaksanakan praktik jaringan komputer di ruang laboratorium.</p>
       </div>
     </div>
-         <div class="col-md-4">
-        <div class="card crop-img">
-    <img src="image/dua.jpg" class="card-img-top" alt="Gambar Galeri" width="200" height="200">
-    <div class="card-body">
-    <h5 class="card-title">Lorem, ipsum.</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error?</p>
-     </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <img src="image/galei/seni.JPG" class="card-img-top crop-img" alt="Pentas Seni">
+      <div class="card-body">
+        <h5 class="card-title">Pentas Seni</h5>
+        <p class="card-text">Penampilan siswa dalam pentas seni tahunan untuk menyalurkan bakat dan kreativitas.</p>
       </div>
     </div>
-     <div class="col-md-4">
-        <div class="card crop-img">
-    <img src="image/dua.jpg" class="card-img-top" alt="Gambar Galeri" width="200" height="200">
-    <div class="card-body">
-    <h5 class="card-title">Lorem, ipsum.</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error?</p>
-     </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <img src="image/galei/6.jpg" class="card-img-top crop-img" alt="Prestasi Siswa">
+      <div class="card-body">
+        <h5 class="card-title">Prestasi Siswa</h5>
+        <p class="card-text">Siswa-siswi berprestasi yang berhasil meraih juara di berbagai lomba tingkat kota dan provinsi.</p>
       </div>
     </div>
-     <div class="col-md-4">
-        <div class="card crop-img">
-    <img src="image/dua.jpg" class="card-img-top" alt="Gambar Galeri" width="200" height="200">
-    <div class="card-body">
-    <h5 class="card-title">Lorem, ipsum.</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error?</p>
-     </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <img src="image/galei/guru.jpg" class="card-img-top crop-img" alt="Pelatihan Guru">
+      <div class="card-body">
+        <h5 class="card-title">Pelatihan Guru</h5>
+        <p class="card-text">Guru-guru mengikuti pelatihan peningkatan kompetensi di bidang teknologi dan pembelajaran.</p>
       </div>
     </div>
-     <div class="col-md-4">
-        <div class="card crop-img">
-    <img src="image/dua.jpg" class="card-img-top" alt="Gambar Galeri" width="200" height="200">
-    <div class="card-body">
-    <h5 class="card-title">Lorem, ipsum.</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error?</p>
-     </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <img src="image/galei/pelepasan.JPG" class="card-img-top crop-img" alt="Pelepasan Siswa Kelas XII">
+      <div class="card-body">
+        <h5 class="card-title">Pelepasan Siswa Kelas XII</h5>
+        <p class="card-text">Momen penuh haru dan kebanggaan saat pelepasan siswa kelas XII sebagai penutup masa studi di SMK Negeri 4 Tasikmalaya.</p>
       </div>
     </div>
-      </div>
-      </div>
+  </div>
+
+</div>
+
+
+    </div>
+  </div>
+</div>
+
 
       </div>
     </div>
-    <div class="container-fluid pt-5 pb-5">
-      <div class="container">
-        <h2 class="display-3 text-center" id="tentang"> Tentang</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quia.</p>
-        <div class="clearfix py-5 ">
-          <img src="image/satu.jpg" class="col-md-6 float-md-end mb-3 crop-img " width="300" height="300" >
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem possimus dolorum ipsam harum accusamus unde!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem possimus dolorum ipsam harum accusamus unde!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem possimus dolorum ipsam harum accusamus unde!</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum accusamus facilis delectus perferendis, beatae odit eligendi officiis commodi iusto labore.</p>
-         
+<div class="container-fluid pt-5 pb-5">
+  <div class="container">
+    <h2 class="display-3 text-center" id="sejarah">Sejarah</h2>
+
+    <div class="row align-items-center py-5">
+      <div class="col-lg-4 col-md-12 order-lg-1 order-2">
+        <p>
+          Sejarah berdirinya SMK Negeri 4 Tasikmalaya tidak terlepas dari kebutuhan masyarakat akan pendidikan menengah kejuruan yang berkualitas dan terjangkau di wilayah Kecamatan Purbaratu dan sekitarnya. Pada awal tahun 2010, pemerintah daerah bersama tokoh masyarakat menyadari pentingnya pemerataan akses pendidikan kejuruan sebagai upaya peningkatan kualitas sumber daya manusia.
+        </p>
+        <p>
+          Sejalan dengan Program Pemerintah dibidang pendidikan Menengah Kejuruan pada saat itu yakni pemerataan akses ditambah pula dengan banyaknya keinginan masyarakat yang mengharapkan adanya SMK Negeri di daerah Kecamatan Purbaratu Kota Tasikmalaya, terutama untuk menampung tamatan dari SLTP yang ingin melanjutkan ke SMK maka beberapa tokoh masyarakat, unsur pejabat pemerintah di Kecamatan Purbaratu Kota Tasikmalaya mengusulkan kepada pemerintah Kota Tasikmalaya dan Pemerintah Provinsi Jawa Barat, agar berdirinya SMK Negeri di Kecamatan Purbaratu Kota Tasikmalaya.
+        </p>
+      </div>
+
+      <div class="col-lg-8 col-md-12 order-lg-2 order-1">
+        <img src="image/tentang.JPG" alt="Sejarah SMK Negeri 4 Tasikmalaya" class="img-fluid rounded shadow" style="max-height: 450px; width: 100%; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="container-fluid pt-5 pb-5 bg-light">
+  <div class="container text-center">
+    <h2 class="display-3 text-center" id="guru">Daftar Guru</h2>
+    <p class="mb-5">
+      Mengenal lebih dekat para guru berdedikasi yang menginspirasi dan membimbing siswa di SMK Negeri 4 Tasikmalaya.
+    </p>
+
+    <div class="row pt-4 gx-4 gy-4 justify-content-center">
+      <div class="col-md-4 col-sm-6 tim">
+        <img src="image/guru/paarif.JPG" alt="Rina" class="rounded-circle mb-3 img-fluid shadow-sm" style="width: 180px; height: 220px; object-fit: cover; object-position: top;">
+
+        <h4 class="fw-bold">Pak Arif</h4>
+        <p class="text-muted fst-italic">Web Design</p>
+        <div class="sosmed">
+          <a href="#" class="social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
-      </div> 
-    </div>
-    <div class="container-fluid pt-5 pb-5 bg-light">
-      <div class="container text-center">
-        <h2 class="display-3" id="staff"> tim kami</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quod excepturi perspiciatis nulla perferendis animi nam laudantium molestias quas ducimus!</p>
-          <div class="row pt-4 gx-4 gy-4">
-            <div class="col-md-4 text-center tim">
-              <img src="image/tiga.jpg" alt="" class="rounded-circle mb-3">
+      </div>
 
-           <h4>Rina</h4>
-      <p>Web Design</p>
-      <div class="sosmed">
-        <a href="#" class="social"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+      <div class="col-md-4 col-sm-6 tim">
+        <img src="image/guru/pataufik.jpg" alt="Rina" class="rounded-circle mb-3 img-fluid shadow-sm" style="width: 180px; height: 220px; object-fit: cover; object-position: top;">
+        <h4 class="fw-bold">Pak Taufik</h4>
+        <p class="text-muted fst-italic">Web Design</p>
+        <div class="sosmed">
+          <a href="#" class="social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4 tim">
-      <img src="image/tiga.jpg" alt="" class="rounded-circle mb-3" width="150">
-      <h4>Rina</h4>
-      <p>Web Design</p>
-      <div class="sosmed">
-        <a href="#" class="social"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+       <div class="col-md-4 col-sm-6 tim">
+        <img src="image/guru/bulisye.jpg" alt="Rina" class="rounded-circle mb-3 img-fluid shadow-sm" style="width: 180px; height: 220px; object-fit: cover; object-position: top;">
+        <h4 class="fw-bold">Bu Lisye</h4>
+        <p class="text-muted fst-italic">Web Design</p>
+        <div class="sosmed">
+          <a href="#" class="social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-    </div>
+       <div class="col-md-4 col-sm-6 tim">
+        <img src="image/guru/pabintang.jpg" alt="Rina" class="rounded-circle mb-3 img-fluid shadow-sm" style="width: 180px; height: 220px; object-fit: cover; object-position: top;">
+        <h4 class="fw-bold">Pak Bintang</h4>
+        <p class="text-muted fst-italic">Web Design</p>
+        <div class="sosmed">
+          <a href="#" class="social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+       <div class="col-md-4 col-sm-6 tim">
+        <img src="image/guru/pazul.jpg" alt="Rina" class="rounded-circle mb-3 img-fluid shadow-sm" style="width: 180px; height: 220px; object-fit: cover; object-position: top;">
+        <h4 class="fw-bold">Pak Zul</h4>
+        <p class="text-muted fst-italic">Web Design</p>
+        <div class="sosmed">
+          <a href="#" class="social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
 
   
-    <div class="col-md-4 tim">
-      <img src="image/tiga.jpg" alt="" class="rounded-circle mb-3" width="150">
-      <h4>Rina</h4>
-      <p>Web Design</p>
-      <div class="sosmed">
-        <a href="#" class="social"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+      <div class="col-md-4 col-sm-6 tim">
+        <img src="image/guru/Pak Adi.jpg" alt="Rina" class="rounded-circle mb-3 img-fluid shadow-sm" style="width: 180px; height: 220px; object-fit: cover; object-position: top;">
+        <h4 class="fw-bold">Pak Adi</h4>
+        <p class="text-muted fst-italic">Web Design</p>
+        <div class="sosmed">
+          <a href="#" class="social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </div>
-
   </div>
 </div>
- <div class="container-fluid client pt-5 pb-5">
-  <div class="container pt-5 pb-5">
-  <div class="row text-center">
-    
-    <div class="col">
-      <img src="image/tiga.jpg" alt="" class="img-fluid">
+<footer class="footer bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <h5>SMK Negeri 4 Tasikmalaya</h5>
+        <p>
+          SMK Negeri 4 Tasikmalaya berdiri sejak tahun 2010, berkomitmen memberikan pendidikan kejuruan berkualitas untuk mencetak generasi unggul dan berdaya saing.
+        </p>
+      </div>
+
+  
+      <div class="col-md-4 mb-4">
+        <h5>Kontak Kami</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-map-marker-alt me-2"></i>  Jl. Depok, Sukamenak, Kec. Purbaratu, Kab. Tasikmalaya, Jawa Barat 46196</li>
+          <li><i class="fas fa-phone me-2"></i> (0265) 312059</li>
+          <li><i class="fas fa-envelope me-2"></i> info@smkn4tasikmalaya.sch.id</li>
+          <li><i class="fas fa-clock me-2"></i> Senin - Jumat: 06.00 - 18.00</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5>Link Penting</h5>
+        <ul class="list-unstyled">
+          <li><a href="#sejarah" class="text-white text-decoration-none">Sejarah</a></li>
+          <li><a href="#galeri" class="text-white text-decoration-none">Galeri</a></li>
+          <li><a href="#staff" class="text-white text-decoration-none">Daftar Guru</a></li>
+          <li><a href="#kontak" class="text-white text-decoration-none">Kontak</a></li>
+        </ul>
+        <h5 class="mt-4">Ikuti Kami</h5>
+        <a href="#" class="text-white me-3 fs-4"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white me-3 fs-4"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white me-3 fs-4"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white me-3 fs-4"><i class="fab fa-youtube"></i></a>
+      </div>
+
     </div>
 
-    <div class="col">
-      <img src="image/tiga.jpg" alt="" class="img-fluid">
-    </div>
+    <hr class="bg-secondary">
 
-    <div class="col">
-      <img src="image/tiga.jpg" alt="" class="img-fluid">
+    <div class="text-center">
+      <small>&copy; 2025 SMK Negeri 4 Tasikmalaya. All rights reserved.</small>
     </div>
-
-    <div class="col">
-      <img src="image/tiga.jpg" alt="" class="img-fluid">
-    </div>
-
   </div>
-</div>
+</footer>
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>
