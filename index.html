@@ -65,115 +65,179 @@
     </div>
     </nav>
   </header>
-  <div class="container-fluid banner">
+  <div class="container-fluid banner p-0">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/galei/guru.jpg" class="d-block w-100" alt="Slide 1">
+      <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+        <h1>Selamat Datang di Website SMKN 4 Tasikmalaya</h1>
+        <p>Temukan informasi lengkap di sini.</p>
+        <a href="#jurusan" class="btn btn-primary">Kunjungi</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/galei/upacara.jpg" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+        <h1>Selamat Datang di Website SMKN 4 Tasikmalaya</h1>
+        <p>Temukan informasi lengkap di sini.</p>
+        <a href="#jurusan" class="btn btn-primary">Kunjungi</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/guru/wp.jpg" class="d-block w-100" alt="Slide 3">
+      <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+        <h1>Selamat Datang di Website SMKN 4 Tasikmalaya</h1>
+        <p>Temukan informasi lengkap di sini.</p>
+        <a href="#jurusan" class="btn btn-primary">Kunjungi</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- tombol prev/next -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container my-5">
+  <div class="card shadow-lg border-0">
+    <div class="row g-0 align-items-center">
+      
+      <!-- Kolom Foto -->
+      <div class="col-md-5 text-center">
+        <img src="image/galei/kepsek.jpeg" class="img-fluid rounded-start w-80 h-80" 
+             alt="Kepala Sekolah" style="object-fit: cover;">
+      </div>
+
+      <!-- Kolom Sambutan -->
+      <div class="col-md-7 p-4">
+        <h3 class="mb-3 text-primary">Sambutan Kepala Sekolah</h3>
+        <p id="typing-text" class="fs-5 fw-light text-muted"></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0 p-4">
+        <h3 class="text-primary" data-target="1116">0</h3>
+        <p>Siswa</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0 p-4">
+        <h3 class="text-success" data-target="60">0</h3>
+        <p>Guru</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0 p-4">
+        <h3 class="text-danger" data-target="5">0</h3>
+        <p>Jurusan</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   <div class="container-fluid jurusan pt-5 pb-5 bg-light">
   <div class="container text-center">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <h2 class="display-3 title fw-bold mb-5 text-primary" id="jurusan">Jurusan</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card jurusan-card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <span class="lingkaran d-inline-flex justify-content-center align-items-center">
+              <i class="fas fa-code fa-5x"></i>
+            </span>
+            <h4 class="mt-3">PPLG</h4>
+            <p class="text-muted small">Pemrograman & Aplikasi</p>
+          </div>
+        </div>
       </div>
-      
-      <div class="carousel-inner">
-
-        <div class="carousel-item active">
-          <img src="image/foto.webp" class="d-block w-100">
-          <div class="carousel-caption">
-            <h1>Selamat Datang di Website SMKN 4 Tasikmalaya</h1>
-            <p>Temukan informasi lengkap di sini.</p>
-            <a href="#jurusan" class="btn btn-primary">Kunjungi</a>
+      <div class="col-md-4">
+        <div class="card jurusan-card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <span class="lingkaran d-inline-flex justify-content-center align-items-center">
+              <i class="fas fa-palette fa-5x"></i>
+            </span>
+            <h4 class="mt-3">DKV</h4>
+            <p class="text-muted small">Desain & Kreativitas Visual</p>
           </div>
         </div>
-
-        <div class="carousel-item">
-          <img src="image/tentang.JPG" class="d-block w-100">
-          <div class="carousel-caption">
-
-            <h1>Selamat Datang di Website SMKN 4 Tasikmalaya</h1>
-            <p>Temukan informasi lengkap di sini.</p>
-            <a href="#jurusan" class="btn btn-primary">Kunjungi</a>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="image/guru/wp.jpg" class="d-block w-100">
-          <div class="carousel-caption">
-
-            <h1>Selamat Datang di Website SMKN 4 Tasikmalaya</h1>
-            <p>Temukan informasi lengkap di sini.</p>
-            <a href="#jurusan" class="btn btn-primary">Kunjungi</a>
-          </div>
-        </div>
-
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
+      <div class="col-md-4">
+        <div class="card jurusan-card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <span class="lingkaran d-inline-flex justify-content-center align-items-center">
+              <i class="fas fa-industry fa-5x"></i>
+            </span>
+            <h4 class="mt-3">TOI</h4>
+            <p class="text-muted small">Teknologi Industri</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    <div class="row g-4 mt-3 justify-content-center">
+      <div class="col-md-4">
+        <div class="card jurusan-card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <span class="lingkaran d-inline-flex justify-content-center align-items-center">
+              <i class="fas fa-wifi fa-5x"></i>
+            </span>
+            <h4 class="mt-3">TKJ</h4>
+            <p class="text-muted small">Teknologi Jaringan</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card jurusan-card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <span class="lingkaran d-inline-flex justify-content-center align-items-center">
+              <i class="fas fa-motorcycle fa-5x"></i>
+            </span>
+            <h4 class="mt-3">TBSM</h4>
+            <p class="text-muted small">Teknik Sepeda Motor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<div class="container my-5">
+  <h2 class="text-center title mb-4 text-primary">History Kegiatan</h2>
 
+  <div class="slider">
+    <div class="slide-track">
+      <div class="slide"><img src="image/galei/1.jpg" alt="OSIS"></div>
+      <div class="slide"><img src="image/galei/2.jpg" alt="Pramuka"></div>
+      <div class="slide"><img src="image/galei/3.jpg" alt="Unjuk Karya"></div>
+      <div class="slide"><img src="image/galei/4.jpg" alt="Senam"></div>
+      <div class="slide"><img src="image/galei/5.jpg" alt="Lomba"></div>
+      <div class="slide"><img src="image/galei/6.jpg" alt="Rapat"></div>
+      <div class="slide"><img src="image/galei/7.jpg" alt="Study Tour"></div>
+      <!-- ulangi lagi biar loop mulus -->
+      <div class="slide"><img src="image/galei/guru.jpg" alt="OSIS"></div>
+      <div class="slide"><img src="image/galei/upacara.jpg" alt="Pramuka"></div>
+      <div class="slide"><img src="image/galei/tentang2.JPG" alt="Unjuk Karya"></div>
     </div>
   </div>
 </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    
-     </button>
-    </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <div class="container-fluid jurusan pt-5 pb-5">
-      <div class="container text-center">
-        <h2 class="display-3" id="jurusan">
-          Jurusan
-        </h2>
-       <div class="row pt-4">
-  <div class="col-md-4">
-    <span class="lingkaran"><i class="fas fa-code fa-5x"></i></span>
-    <h3 class="mt-3">PPLG</h3>
-    <p>Jurusan ini mempelajari cara membuat aplikasi, website, dan game dari nol. Siswa akan belajar bahasa pemrograman, desain antarmuka, serta manajemen proyek digital. Cocok bagi kamu yang tertarik menjadi programmer, game developer, atau software engineer di masa depan.</p>
-  </div>
-  <div class="col-md-4">
-    <span class="lingkaran"><i class="fas fa-palette fa-5x"></i></span>
-    <h3 class="mt-3">DKV</h3>
-    <p>DKV mengajarkan cara menyampaikan pesan melalui media visual seperti poster, logo, animasi, dan konten digital. Di sini, siswa diasah kreativitas dan kemampuan teknis dalam desain grafis, fotografi, serta komunikasi visual. Jurusan ini sangat cocok untuk calon desainer dan content creator.</p>
-  </div>
-  <div class="col-md-4">
-    <span class="lingkaran"><i class="fas fa-industry fa-5x"></i></span>
-    <h3 class="mt-3">TOI</h3>
-    <p>Jurusan TOI fokus pada penguasaan teknologi industri dan sistem otomatisasi berbasis mesin serta kontrol digital. Siswa akan belajar mengoperasikan dan memprogram alat-alat industri modern. Lulusan TOI siap bekerja di dunia manufaktur dan industri berbasis teknologi tinggi.</p>
-  </div>
-</div>
-<div class="row pt-4 justify-content-center">
-  <div class="col-md-4">
-    <span class="lingkaran"><i class="fas fa-wifi fa-5x"></i></span>
-    <h3 class="mt-3">TKJ</h3>
-    <p>TKJ membekali siswa dengan keterampilan merakit komputer, mengelola jaringan internet, serta memahami sistem operasi dan keamanan jaringan. Sangat cocok untuk kamu yang ingin menjadi teknisi komputer, admin jaringan, atau profesional di bidang IT.</p>
-  </div>
-  <div class="col-md-4">
-    <span class="lingkaran"><i class="fas fa-motorcycle fa-5x"></i></span>
-    <h3 class="mt-3">TBSM</h3>
-    <p>Jurusan ini menggabungkan keahlian teknis dalam perawatan dan perbaikan sepeda motor dengan pengetahuan bisnis otomotif. Siswa belajar mesin, sistem kelistrikan, hingga cara membuka usaha bengkel atau layanan servis. Cocok untuk kamu yang ingin langsung kerja atau wirausaha.</p>
-  </div>
-</div>
-
-      </div>
-    </div>
 <div class="container-fluid galeri pt-5 pb-5 ">
   <div class="container text-center">
-    <h2 class="display-3" id="galeri">Galeri</h2>
+    <h2 class="display-3 title" id="galeri">Galeri</h2>
     <p>
       Galeri ini menampilkan berbagai dokumentasi kegiatan siswa, guru, dan seluruh civitas sekolah yang mencerminkan semangat belajar, kreativitas, kebersamaan, serta prestasi di lingkungan SMK Negeri 4 Tasikmalaya. Setiap momen menjadi bagian dari perjalanan dalam membentuk generasi yang berkarakter dan berkompetensi.
     </p>
@@ -239,21 +303,15 @@
       </div>
     </div>
   </div>
-
 </div>
-
-
     </div>
   </div>
 </div>
-
-
       </div>
     </div>
 <div class="container-fluid sejarah pt-5 pb-5">
-  <div class="container">
-    <h2 class="display-3 text-center" id="sejarah">Sejarah</h2>
-
+  <div class="container text-center">
+    <h2 class="display-3 text-center title" id="sejarah">Sejarah</h2>
     <div class="row align-items-center py-5">
       <div class="col-lg-4 col-md-12 order-lg-1 order-2">
         <p>
@@ -275,7 +333,7 @@
 
     <div class="container-fluid guru pt-5 pb-5 bg-light">
   <div class="container text-center">
-    <h2 class="display-3 text-center" id="guru">Daftar Guru</h2>
+    <h2 class="display-3 text-center title" id="guru">Daftar Guru</h2>
     <p class="mb-5">
       Mengenal lebih dekat para guru berdedikasi yang menginspirasi dan membimbing siswa di SMK Negeri 4 Tasikmalaya.
     </p>
@@ -399,5 +457,79 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script>
+  const titles = document.querySelectorAll(".title");
+  titles.forEach(title => {
+    title.addEventListener("click", () => {
+      title.classList.add("clicked");
+      setTimeout(() => title.classList.remove("clicked"), 400); 
+    });
+  });
+</script>
+<script>
+  const text = `Assalamu’alaikum Wr. Wb. 
+  Puji syukur kita panjatkan kehadirat Allah SWT karena berkat rahmat dan karunia-Nya, 
+  kita dapat berkumpul dalam suasana penuh semangat untuk memajukan dunia pendidikan. 
+  Selamat datang di website resmi sekolah kami, sebuah media informasi sekaligus sarana komunikasi 
+  bagi seluruh warga sekolah, orang tua, dan masyarakat luas. 
+
+  Website ini berisi berbagai informasi terkait kegiatan sekolah, prestasi siswa, program pendidikan, 
+  serta aktivitas guru dan tenaga kependidikan. Harapan kami, melalui website ini transparansi 
+  informasi pendidikan dapat terwujud, sekaligus menjadi ruang inspirasi dan motivasi 
+  untuk terus berkarya dan berprestasi. 
+
+  Mari bersama-sama kita wujudkan generasi muda yang berkarakter, berilmu, dan berdaya saing. 
+  Terima kasih atas dukungan semua pihak. Wassalamu’alaikum Wr. Wb.`;
+
+  let index = 0;
+
+  function typeWriter() {
+    if (index < text.length) {
+      document.getElementById("typing-text").innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeWriter, 50); // kecepatan ngetik
+    }
+  }
+
+  window.onload = typeWriter;
+</script>
+<script>
+  const counters = document.querySelectorAll("h3[data-target]");
+  const speed = 50;
+
+  function runCounter(counter) {
+    const target = +counter.getAttribute("data-target");
+    let count = 0;
+    const increment = Math.ceil(target / speed);
+
+    const updateCount = () => {
+      if (count < target) {
+        count += increment;
+        counter.innerText = count;
+        setTimeout(updateCount, 30);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCount();
+  }
+
+  // Pakai IntersectionObserver
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        runCounter(entry.target);
+        observer.unobserve(entry.target); // biar cuma sekali jalan
+      }
+    });
+  }, { threshold: 0.5 }); // jalan kalau 50% elemen kelihatan
+
+  counters.forEach(counter => {
+    observer.observe(counter);
+  });
+</script>
+
+
   </body>
 </html>
