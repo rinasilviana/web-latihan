@@ -6,49 +6,93 @@ html {
   font-family: 'Poppins', sans-serif;
   
 }
-#galeri h2, 
-.jurusan h2, 
-.sejarah h2, 
-.guru h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #222;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+.navbar-brand {
+  color: white;
 }
 
-#galeri p, 
-.jurusan p, 
-.sejarah p, 
-.guru p {
+.top-navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-top {
+  font-size: 14px;
+}
+
+.navbar .nav-link {
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background-color: rgb(91, 141, 218);
+  color: #ffffff !important;
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    display: none !important;
+  }
+
+  .logo h5 {
+    font-size: 14px;
+  }
+}
+
+body {
+  padding-top: 140px; 
+}
+
+.container-fluid h2 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  color: #444;
-  line-height: 1.7;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #1e3a8a; /* biru navy elegan */
+  text-transform: uppercase;
+}
+
+
+.container-fluid p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300; 
+  color: #555;
+  line-height: 1.8;
 }
 
   .text-section p {
   text-align: left;
 }
 .img-client {
-  width: 100%;         /* Lebar mengikuti container kolom */
-  height: 200px;       /* Tinggi gambar tetap */
-  object-fit: cover;   /* Memotong gambar agar proporsi tetap */
-  display: block;      /* Biar margin/padding lebih rapi */
-  border-radius: 0.5rem; /* Membulatkan sudut */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Shadow halus */
+  width: 100%;         
+  height: 200px;      
+  object-fit: cover;   
+  display: block;      
+  border-radius: 0.5rem; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15); 
+}
+.carousel-caption h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff; 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.carousel-caption p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #eee;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.carousel-item img {
+  object-fit: cover; 
+  width: 100%;
+  height: 500px; 
 }
 
 
-
 .banner {
-    background: url("image/foto.webp") 
-    no-repeat center center;
     background-size: cover;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    color: #fff;
+    color: #132974;
 }
 .lingkaran {
     display: inline-block;
@@ -57,7 +101,7 @@ html {
     margin: auto;
     height: 150px;
     color: #fff;
-    background-color: #da6c6c;
+    background-color: #073392;
 }
 
 .lingkaran i{
