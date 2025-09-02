@@ -1,0 +1,287 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-family: "Poppins", sans-serif;
+}
+.navbar-brand {
+  color: white;
+}
+
+.top-navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-top {
+  font-size: 14px;
+}
+
+.navbar .nav-link {
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background-color: rgb(91, 141, 218);
+  color: #ffffff !important;
+  border-radius: 0;
+}
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: #f8f9fa;
+  padding: 20px 0;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 14); /* jumlah slide × lebar */
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  width: 250px;
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+.slide img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animasi jalan */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  } /* geser setengah isi */
+}
+@media (max-width: 768px) {
+  .contact-info {
+    display: none !important;
+  }
+
+  .logo h5 {
+    font-size: 14px;
+  }
+}
+
+body {
+  padding-top: 140px;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #1e3a8a; /* biru navy elegan */
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Efek hover */
+.title:hover {
+  color: #0b2af5; /* emas */
+  transform: scale(1.1);
+}
+
+/* Efek animasi klik */
+.title.clicked {
+  animation: bounce 0.4s ease;
+  color: #0eaef3; /* merah elegan pas diklik */
+}
+.jurusan-card {
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.jurusan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.lingkaran {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  color: #fff;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.carousel-item img {
+  height: 100vh; /* penuh 1 layar */
+  object-fit: cover; /* biar nggak ketarik */
+  width: 100%;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* overlay gelap transparan */
+  z-index: 1;
+}
+
+.carousel-caption {
+  z-index: 2; /* teks di atas overlay */
+}
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 50vh; /* setengah layar di HP */
+  }
+}
+
+.container-fluid p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.8;
+}
+
+.text-section p {
+  text-align: left;
+}
+.img-client {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.carousel-caption h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.carousel-caption p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #eee;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.banner {
+  background-size: cover;
+  color: #132974;
+}
+
+.lingkaran {
+  width: 120px; 
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  color: #fff;
+
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.lingkaran i {
+  font-size: 3rem; 
+}
+.crop-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tim img {
+  width: 250px;
+  border: 10px solid #cccc;
+}
+a.social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #312626;
+  border-radius: 50%;
+  background-color: #ccaeae;
+  line-height: 40px;
+}
+.client img {
+  height: auto;
+  max-height: 50px;
+}
+.footer {
+  background-color: #222;
+  color: #eee;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  color: #eee;
+}
+
+.footer a:hover {
+  color: #f8b400;
+  text-decoration: underline;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer i {
+  color: #f8b400;
+}
+
+hr.bg-secondary {
+  opacity: 0.2;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
