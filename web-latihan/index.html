@@ -1,461 +1,445 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-5oVJQoYrV7uFk5yB1Wr3J6LsKJbdJpAg2lhIfApdpAB+Nz8MC3fCwzv0LULUO6YoWvKpx9WzJ0fx8w4Fw3keWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-5oVJQoYrV7uFk5yB1Wr3J6LsKJbdJpAg2lhIfApdpAB+Nz8MC3fCwzv0LULUO6YoWvKpx9WzJ0fx8w4Fw3keWw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-<header class="top-navbar fixed-top">
-  <div class="navbar-top py-2 bg-white border-bottom">
-<div class="container py-3 d-flex justify-content-between align-items-center shadow" style="background-color: #0768c2;">
-      <div class="logo d-flex align-items-center">
-        <img src="image/galei/logo/Logo_SMK_Negeri_4_Tasikmalaya.png" alt="Logo" width="60" height="60">
-        <h5 class="mb-0 ms-2 fw-bold text-white ">SMKN 4 TASIKMALAYA</h5>
+    <header class="top-navbar fixed-top">
+      <div class="navbar-top py-2 bg-white border-bottom">
+        <div class="container py-3 d-flex justify-content-between align-items-center shadow" style="background-color: #edeff1;">
+          <div class="logo d-flex align-items-center">
+            <img src="image/galei/logo/Logo_SMK_Negeri_4_Tasikmalaya.png" alt="Logo" width="60" height="60" />
+            <h5 class="mb-0 ms-2 fw-bold text-primary ">SMKN 4 TASIKMALAYA</h5>
+          </div>
+          <div class="contact-info d-none d-md-flex align-items-center gap-4">
+            <div><i class="fas fa-envelope"></i> email@smkn4.sch.id</div>
+            <div><i class="fas fa-phone"></i>(0265) 312059</div>
+          </div>
+        </div>
       </div>
-      <div class="contact-info d-none d-md-flex align-items-center gap-4">
-        <div><i class="fas fa-envelope"></i> email@smkn4.sch.id</div>
-        <div><i class="fas fa-phone"></i>(0265) 312059</div>
-      </div>
-    </div>
-  </div>
-  <nav class="navbar navbar-expand-lg main-navbar py-0" style="background-color: #0056b3;">
-    <div class="container">
-      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <nav class="navbar navbar-expand-lg main-navbar py-0" style="background-color: #0056b3;">
+        <div class="container">
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-      <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-white fw-bold px-3" href="index.html">Beranda</a>
-          </li>
-           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white px-3" href="#" data-bs-toggle="dropdown">
-            Profil
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="identitas.html">Identitas sekolah</a></li>
-              <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
-              <li><a class="dropdown-item" href="vismis.html">Visi & Misi</a></li>
-              <li><a class="dropdown-item" href="kepsek.html">Kepala Sekolah</a></li>  
-                 <li><a class="dropdown-item" href="guru&staf.html">Guru & staf</a></li>  
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white fw-bold px-3" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white px-3" href="#" data-bs-toggle="dropdown"> Profil </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="identitas.html">Identitas sekolah</a></li>
+                  <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+                  <li><a class="dropdown-item" href="vismis.html">Visi & Misi</a></li>
+                  <li><a class="dropdown-item" href="kepsek.html">Kepala Sekolah</a></li>
+                  <li><a class="dropdown-item" href="guru&staf.html">Guru & staf</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white px-3" href="#" data-bs-toggle="dropdown"> Kurikulum </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="jurusan.html">Konsentrasi Keahlian</a></li>
+                  <li><a class="dropdown-item" href="prestasi.html">Prestasi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white px-3" href="#" data-bs-toggle="dropdown"> Kesiswaan </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="organisasi.html">Organisasi</a></li>
+                  <li><a class="dropdown-item" href="eskul.html">Ekstrakulikuler</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-3" href="#berita">Berita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-3" href="#galeri">Galeri</a>
+              </li>
             </ul>
-          </li>
-           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white px-3" href="#" data-bs-toggle="dropdown">
-            Kurikulum
-            </a>
-           <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="jurusan.html">Konsentrasi Keahlian</a></li>
-               <li><a class="dropdown-item" href="prestasi.html">Prestasi</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div style="width:100vw; height:100vh; overflow:hidden; position: relative;">
+      <div id="carouselExampleIndicators" class="carousel slide h-100" data-bs-ride="carousel" style="height:100%; width:100vw;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img src="image/galei/guru.jpg" alt="Slide 1" class="d-block w-100 h-100" style="object-fit: cover; display:block;" />
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+              <h1>Selamat Datang di Website SMKN 4 Tasikmalaya</h1>
+              <p>Temukan informasi lengkap di sini.</p>
+              <a href="#kunjungi" class="btn btn-primary">Kunjungi</a>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="image/galei/upacara.jpg" alt="Slide 2" class="d-block w-100 h-100" style="object-fit: cover; display:block;" />
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+              <h1>Selamat Datang di Website SMKN 4 Tasikmalaya</h1>
+              <p>Temukan informasi lengkap di sini.</p>
+              <a href="#kunjungi" class="btn btn-primary">Kunjungi</a>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="image/guru/wp.jpg" alt="Slide 3" class="d-block w-100 h-100" style="object-fit: cover; display:block;" />
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+              <h1>Selamat Datang di Website SMKN 4 Tasikmalaya</h1>
+              <p>Temukan informasi lengkap di sini.</p>
+              <a href="#kunjungi" class="btn btn-primary">Kunjungi</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="card shadow-lg border-0">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-5 text-center">
+            <img src="image/galei/kepsek.jpeg" class="img-fluid rounded-start w-80 h-80" alt="Kepala Sekolah" style="object-fit: cover;" />
+          </div>
+          <div class="col-md-7 p-4">
+            <h3 class="mb-3 text-primary" id="kunjungi">Sambutan Kepala Sekolah</h3>
+            <p id="typing-text" class="fs-5 fw-light text-muted"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="card shadow-sm border-0 p-4 bg-primary text-white">
+            <h3 data-target="1116">0</h3>
+            <p>Siswa</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card shadow-sm border-0 p-4  bg-primary text-white">
+            <h3 data-target="60">0</h3>
+            <p>Guru</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm border-0 p-4  bg-primary text-white">
+            <h3 data-target="5">0</h3>
+            <p>Jurusan</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm border-0 p-4  bg-primary text-white">
+            <h3 data-target="10">0</h3>
+            <p>Staf Tu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5">
+      <h2 class="display-3 fs-2 title text-center mb-2" id="berita">Berita</h2>
+      <hr class="mx-auto mb-4" style="width: 80px; height: 3px; background-color: #f0ad4e; opacity: 1;" />
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Berita 1 -->
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm bg-light">
+            <div class="hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="image/jobfair.jpg" class="card-img-top" alt="Berita 1" />
+            </div>
+            <div class="card-body">
+              <h6 class="card-title fw-bold">
+                <a href="https://radartasik.id/2023/10/12/smkn-4-tasikmalaya-koneksikan-iduka-dengan-pencari-kerja/" target="_blank" class="text-decoration-none text-dark"> SMKN 4 Tasikmalaya Koneksikan Iduka dengan Pencari Kerja </a>
+              </h6>
+              <div class="d-flex justify-content-between small text-muted mb-2">
+                <span>Kamis, 12 Okt 2023</span>
+                <span><i class="bi bi-eye"></i> 159 Views</span>
+              </div>
+              <p class="card-text">SMKN 4 Tasikmalaya mengadakan job fair bersama 25 dunia industri dengan 500 lowongan kerja untuk alumni dan masyarakat, sekaligus bagian dari program P5 kelas X dan XI sebagai SMK Pusat Keunggulan...</p>
+              <a href="https://radartasik.id/2023/10/12/smkn-4-tasikmalaya-koneksikan-iduka-dengan-pencari-kerja/" target="_blank" class="btn btn-warning btn-sm rounded-pill shadow-sm"> Lihat Detail → </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Berita 2 -->
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm bg-light">
+            <div class="hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="image/safety.jpeg" class="card-img-top" alt="Berita 2" />
+            </div>
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Honda Resmikan Safety Riding Lab di SMKN 4 Tasikmalaya, Ciptakan Bibit Keselamatan di Jawa Barat</h6>
+              <div class="d-flex justify-content-between small text-muted mb-2">
+                <span>Apr 22, 2025</span>
+                <span><i class="bi bi-eye"></i> 176 Views</span>
+              </div>
+              <p class="card-text">Honda meresmikan Safety Riding Lab di SMKN 4 Tasikmalaya sebagai pusat pelatihan keselamatan berkendara bagi pelajar Gen Z...</p>
+              <a
+                href="https://www.pikiran-rakyat.com/otomotif/pr-018109177/honda-resmikan-safety-riding-lab-di-smkn-4-tasikmalaya-ciptakan-bibit-keselamatan-pada-gen-z?page=all"
+                target="_blank"
+                class="btn btn-warning btn-sm rounded-pill shadow-sm"
+              >
+                Lihat Detail →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Berita 3 -->
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm bg-light">
+            <div class="hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="image/expo.jpg" class="card-img-top" alt="Berita 3" />
+            </div>
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Siswa SMKN 4 Tasikmalaya Adu Inovasi dan Kreativitas di Expo Creanova</h6>
+              <div class="d-flex justify-content-between small text-muted mb-2">
+                <span>Senin 27 Feb 2023</span>
+                <span><i class="bi bi-eye"></i> 495 Views</span>
+              </div>
+              <p class="card-text">
+                SMKN 4 Tasikmalaya gelar Expo Creanova dengan bazar, pameran, futsal (31 tim putra, 8 tim putri) & Mobile Legends (28 tim). Juara futsal putra: SMPN 15, Al-Maarif, SMPN 1 Cisayong; putri: SMPN 14, MTs Arohmah, SMPN 11;
+                Mobile Legends: SMPN 2, SMPN 5, SMPN 1 Rajapolah.
+              </p>
+              <a href="https://radartasik.id/2023/03/02/siswa-smkn-4-tasikmalaya-adu-inovasi-dan-kreativitas-di-expo-creanova/" target="_blank" class="btn btn-warning btn-sm rounded-pill shadow-sm"> Lihat Detail → </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid galeri py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="display-3 fs-2 title text-center mb-2" id="galeri">Galeri</h2>
+        <hr class="mx-auto mb-4" style="width: 80px; height: 3px; background-color: #f0ad4e; opacity: 2;" />
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm rounded-3">
+              <img src="image/galei/upacara.jpg" class="card-img-top rounded-top" alt="Upacara Bendera" />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Upacara Bendera</h5>
+                <p class="card-text text-muted small">Suasana upacara bendera rutin hari Senin yang diikuti seluruh warga sekolah.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm rounded-3">
+              <img src="image/galei/2.jpg" class="card-img-top rounded-top" alt="Kegiatan Praktikum" />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Kegiatan Praktikum</h5>
+                <p class="card-text text-muted small">Siswa sedang melaksanakan praktik jaringan komputer di ruang laboratorium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm rounded-3">
+              <img src="image/galei/seni.JPG" class="card-img-top rounded-top" alt="Pentas Seni" />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Pentas Seni</h5>
+                <p class="card-text text-muted small">Penampilan siswa dalam pentas seni tahunan untuk menyalurkan bakat dan kreativitas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm rounded-3">
+              <img src="image/galei/6.jpg" class="card-img-top rounded-top" alt="Prestasi Siswa" />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Prestasi Siswa</h5>
+                <p class="card-text text-muted small">Siswa-siswi berprestasi yang berhasil meraih juara di berbagai lomba tingkat kota dan provinsi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm rounded-3">
+              <img src="image/galei/guru.jpg" class="card-img-top rounded-top" alt="Pelatihan Guru" />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Pelatihan Guru</h5>
+                <p class="card-text text-muted small">Guru-guru mengikuti pelatihan peningkatan kompetensi di bidang teknologi dan pembelajaran.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm rounded-3">
+              <img src="image/galei/pelepasan.JPG" class="card-img-top rounded-top" alt="Pelepasan Siswa Kelas XII" />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Pelepasan Siswa Kelas XII</h5>
+                <p class="card-text text-muted small">Momen penuh haru dan kebanggaan saat pelepasan siswa kelas XII sebagai penutup masa studi di SMKN 4 Tasikmalaya.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tombol Selengkapnya -->
+        <div class="text-center mt-5">
+          <a href="link-anda.html" class="btn btn-primary btn-lg px-4 rounded-pill shadow-sm">
+            Lihat Selengkapnya
+            <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Tentang -->
+          <div class="col-md-3">
+            <h5>SMK Negeri 4 Tasikmalaya</h5>
+            <p class="small">Mencetak generasi unggul sejak 2010 dengan pendidikan kejuruan berkualitas dan berdaya saing.</p>
+          </div>
+
+          <!-- Kontak & Alamat + Maps -->
+          <div class="col-md-5">
+            <h5>Kontak Kami</h5>
+            <ul class="list-unstyled small">
+              <li><i class="fas fa-map-marker-alt me-2"></i>Jl. Depok, Sukamenak, Tasikmalaya</li>
+              <li><i class="fas fa-phone me-2"></i>(0265) 312059</li>
+              <li><i class="fas fa-envelope me-2"></i>info@smkn4tasikmalaya.sch.id</li>
+              <li><i class="fas fa-clock me-2"></i>Senin - Jumat: 06.00 - 18.00</li>
             </ul>
-          </li>
-           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white px-3" href="#" data-bs-toggle="dropdown">
-            Kesiswaan
-            </a>
-           <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="organisasi.html">Organisasi</a></li>
-              <li><a class="dropdown-item" href="eskul.html">Ekstrakulikuler</a></li>
+
+            <!-- Maps Embed dengan tinggi yg pas -->
+            <div class="mt-3" style="height: 180px; overflow: hidden; border-radius: 8px;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.213116362029!2d108.25189907500041!3d-7.329945292678408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f59eeb6bda36f%3A0xa9e724a275da6c2d!2sVocational%20School%20District%204%20Tasikmalaya!5e0!3m2!1sen!2sid!4v1756707648401!5m2!1sen!2sid"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Link Penting -->
+          <div class="col-md-4">
+            <h5>Link Penting</h5>
+            <ul class="list-unstyled small">
+              <li><a href="#sejarah" class="text-white text-decoration-none">Sejarah</a></li>
+              <li><a href="#galeri" class="text-white text-decoration-none">Galeri</a></li>
+              <li><a href="#guru" class="text-white text-decoration-none">Daftar Guru</a></li>
+              <li><a href="#kontak" class="text-white text-decoration-none">Kontak</a></li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white px-3" href="#berita">Berita</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white px-3" href="#galeri">Galeri</a>
-          </li>
-         
-        </ul>
-      </div>
-    </div>
-    </nav>
-  </header>
-  <div style="width:100vw; height:100vh; overflow:hidden; position: relative;">
-  <div id="carouselExampleIndicators" class="carousel slide h-100" data-bs-ride="carousel" style="height:100%; width:100vw;">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
-    </div>
 
-    <div class="carousel-inner h-100">
-      <div class="carousel-item active h-100">
-        <img src="image/galei/guru.jpg" alt="Slide 1"
-          class="d-block w-100 h-100"
-          style="object-fit: cover; display:block;">
-        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
-          <h1>Selamat Datang di Website SMKN 4 Tasikmalaya</h1>
-          <p>Temukan informasi lengkap di sini.</p>
-          <a href="#kunjungi" class="btn btn-primary">Kunjungi</a>
-        </div>
-      </div>
-      <div class="carousel-item h-100">
-        <img src="image/galei/upacara.jpg" alt="Slide 2"
-          class="d-block w-100 h-100"
-          style="object-fit: cover; display:block;">
-        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
-          <h1>Selamat Datang di Website SMKN 4 Tasikmalaya</h1>
-          <p>Temukan informasi lengkap di sini.</p>
-          <a href="#kunjungi" class="btn btn-primary">Kunjungi</a>
-        </div>
-      </div>
-      <div class="carousel-item h-100">
-        <img src="image/guru/wp.jpg" alt="Slide 3"
-          class="d-block w-100 h-100"
-          style="object-fit: cover; display:block;">
-        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
-          <h1>Selamat Datang di Website SMKN 4 Tasikmalaya</h1>
-          <p>Temukan informasi lengkap di sini.</p>
-          <a href="#kunjungi" class="btn btn-primary">Kunjungi</a>
-        </div>
-      </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</div>
-<div class="container my-5">
-  <div class="card shadow-lg border-0">
-    <div class="row g-0 align-items-center">
-    
-      <div class="col-md-5 text-center">
-        <img src="image/galei/kepsek.jpeg" class="img-fluid rounded-start w-80 h-80" 
-             alt="Kepala Sekolah" style="object-fit: cover;">
-      </div>
-      <div class="col-md-7 p-4">
-        <h3 class="mb-3 text-primary" id="kunjungi">Sambutan Kepala Sekolah</h3>
-        <p id="typing-text" class="fs-5 fw-light text-muted"></p>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div class="container my-5">
-  <div class="row text-center">
-    <div class="col-md-3">
-      <div class="card shadow-sm border-0 p-4">
-        <h3 class="text-primary" data-target="1116">0</h3>
-        <p>Siswa</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card shadow-sm border-0 p-4">
-        <h3 class="text-success" data-target="60">0</h3>
-        <p>Guru</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card shadow-sm border-0 p-4">
-        <h3 class="text-danger" data-target="5">0</h3>
-        <p>Jurusan</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card shadow-sm border-0 p-4">
-        <h3 class="text-danger" data-target="10">0</h3>
-        <p>Staf Tu</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid galeri pt-5 pb-5">
-  <div class="container text-center">
-    <h2 class="display-3 title" id="berita">Berita</h2>
-  <div class="container my-5">
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-
-      <!-- Kartu Berita -->
-      <div class="col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="image/galei/4.jpg" class="card-img-top" alt="Gambar Berita 1">
-          <div class="card-body d-flex flex-column">
-            <small class="text-muted">Selasa, 2 September 2025</small>
-            <h5 class="card-title mt-2">Judul Berita Pertama</h5>
-            <p class="card-text">Ringkasan singkat dari berita pertama. Bisa berisi inti berita dalam 2–3 kalimat.</p>
-            <div class="mt-auto">
-              <a href="#" class="btn btn-primary btn-sm">Lihat Selengkapnya</a>
+            <h5 class="mt-4">Ikuti Kami</h5>
+            <div>
+              <a href="#" class="text-white fs-4 me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white fs-4 me-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white fs-4 me-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white fs-4 me-3"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
         </div>
+
+        <hr class="bg-secondary mt-4" />
+
+        <div class="text-center small">&copy; 2025 SMK Negeri 4 Tasikmalaya. All rights reserved.</div>
       </div>
-
-      <!-- Kartu Berita 2 -->
-      <div class="col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="image/galei/3.jpg" class="card-img-top" alt="Gambar Berita 2">
-          <div class="card-body d-flex flex-column">
-            <small class="text-muted">Rabu, 3 September 2025</small>
-            <h5 class="card-title mt-2">Judul Berita Kedua</h5>
-            <p class="card-text">Deskripsi dari berita kedua. Penjelasan singkat yang menarik perhatian pembaca.</p>
-            <div class="mt-auto">
-              <a href="#" class="btn btn-primary btn-sm">Lihat Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Kartu Berita 3 -->
-      <div class="col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="image/galei/2.jpg" class="card-img-top" alt="Gambar Berita 3">
-          <div class="card-body d-flex flex-column">
-            <small class="text-muted">Kamis, 4 September 2025</small>
-            <h5 class="card-title mt-2">Judul Berita Ketiga</h5>
-            <p class="card-text">Berita ketiga ini membahas sesuatu yang berbeda. Masih dalam format ringkasan singkat.</p>
-            <div class="mt-auto">
-              <a href="#" class="btn btn-primary btn-sm">Lihat Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Kartu Berita 4 -->
-      <div class="col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="image/galei/5.jpg" class="card-img-top" alt="Gambar Berita 4">
-          <div class="card-body d-flex flex-column">
-            <small class="text-muted">Jumat, 5 September 2025</small>
-            <h5 class="card-title mt-2">Judul Berita Keempat</h5>
-            <p class="card-text">Isi ringkasan berita keempat. Format tetap konsisten agar enak dibaca.</p>
-            <div class="mt-auto">
-              <a href="#" class="btn btn-primary btn-sm">Lihat Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-<div class="container-fluid galeri pt-5 pb-5">
-  <div class="container text-center">
-    <h2 class="display-3 title" id="galeri">Galeri</h2>
-    <p>
-      Galeri ini menampilkan berbagai dokumentasi kegiatan siswa, guru, dan seluruh civitas sekolah yang mencerminkan semangat belajar, kreativitas, kebersamaan, serta prestasi di lingkungan SMK Negeri 4 Tasikmalaya. Setiap momen menjadi bagian dari perjalanan dalam membentuk generasi yang berkarakter dan berkompetensi.
-    </p>
-
-    <div class="row pt-4 gx-4 gy-4">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="image/galei/upacara.jpg" class="card-img-top crop-img" alt="Upacara Bendera">
-          <div class="card-body">
-            <h5 class="card-title">Upacara Bendera</h5>
-            <p class="card-text">Suasana upacara bendera rutin hari Senin yang diikuti seluruh warga sekolah.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="image/galei/2.jpg" class="card-img-top crop-img" alt="Kegiatan Praktikum">
-          <div class="card-body">
-            <h5 class="card-title">Kegiatan Praktikum</h5>
-            <p class="card-text">Siswa sedang melaksanakan praktik jaringan komputer di ruang laboratorium.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="image/galei/seni.JPG" class="card-img-top crop-img" alt="Pentas Seni">
-          <div class="card-body">
-            <h5 class="card-title">Pentas Seni</h5>
-            <p class="card-text">Penampilan siswa dalam pentas seni tahunan untuk menyalurkan bakat dan kreativitas.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="image/galei/6.jpg" class="card-img-top crop-img" alt="Prestasi Siswa">
-          <div class="card-body">
-            <h5 class="card-title">Prestasi Siswa</h5>
-            <p class="card-text">Siswa-siswi berprestasi yang berhasil meraih juara di berbagai lomba tingkat kota dan provinsi.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="image/galei/guru.jpg" class="card-img-top crop-img" alt="Pelatihan Guru">
-          <div class="card-body">
-            <h5 class="card-title">Pelatihan Guru</h5>
-            <p class="card-text">Guru-guru mengikuti pelatihan peningkatan kompetensi di bidang teknologi dan pembelajaran.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="image/galei/pelepasan.JPG" class="card-img-top crop-img" alt="Pelepasan Siswa Kelas XII">
-          <div class="card-body">
-            <h5 class="card-title">Pelepasan Siswa Kelas XII</h5>
-            <p class="card-text">Momen penuh haru dan kebanggaan saat pelepasan siswa kelas XII sebagai penutup masa studi di SMK Negeri 4 Tasikmalaya.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Tombol di tengah -->
-    <div class="text-center mt-4">
-      <a href="link-anda.html" class="btn btn-primary d-inline-flex align-items-center">
-        Lihat Selengkapnya
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-        </svg>
-      </a>
-    </div>
-</div>
-  </div>
-</div>
-</div>
-<footer class="bg-dark text-white pt-5 pb-4">
-  <div class="container">
-    <div class="row gy-4">
-
-      <!-- Tentang -->
-      <div class="col-md-3">
-        <h5>SMK Negeri 4 Tasikmalaya</h5>
-        <p class="small">
-          Mencetak generasi unggul sejak 2010 dengan pendidikan kejuruan berkualitas dan berdaya saing.
-        </p>
-      </div>
-
-      <!-- Kontak & Alamat + Maps -->
-      <div class="col-md-5">
-        <h5>Kontak Kami</h5>
-        <ul class="list-unstyled small">
-          <li><i class="fas fa-map-marker-alt me-2"></i>Jl. Depok, Sukamenak, Tasikmalaya</li>
-          <li><i class="fas fa-phone me-2"></i>(0265) 312059</li>
-          <li><i class="fas fa-envelope me-2"></i>info@smkn4tasikmalaya.sch.id</li>
-          <li><i class="fas fa-clock me-2"></i>Senin - Jumat: 06.00 - 18.00</li>
-        </ul>
-        
-        <!-- Maps Embed dengan tinggi yg pas -->
-        <div class="mt-3" style="height: 180px; overflow: hidden; border-radius: 8px;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.213116362029!2d108.25189907500041!3d-7.329945292678408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f59eeb6bda36f%3A0xa9e724a275da6c2d!2sVocational%20School%20District%204%20Tasikmalaya!5e0!3m2!1sen!2sid!4v1756707648401!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-
-      <!-- Link Penting -->
-      <div class="col-md-4">
-        <h5>Link Penting</h5>
-        <ul class="list-unstyled small">
-          <li><a href="#sejarah" class="text-white text-decoration-none">Sejarah</a></li>
-          <li><a href="#galeri" class="text-white text-decoration-none">Galeri</a></li>
-          <li><a href="#guru" class="text-white text-decoration-none">Daftar Guru</a></li>
-          <li><a href="#kontak" class="text-white text-decoration-none">Kontak</a></li>
-        </ul>
-
-        <h5 class="mt-4">Ikuti Kami</h5>
-        <div>
-          <a href="#" class="text-white fs-4 me-3"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-white fs-4 me-3"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="text-white fs-4 me-3"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="text-white fs-4 me-3"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-
-    </div>
-
-    <hr class="bg-secondary mt-4">
-
-    <div class="text-center small">
-      &copy; 2025 SMK Negeri 4 Tasikmalaya. All rights reserved.
-    </div>
-  </div>
-</footer>
-
-
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  <script>
-  const titles = document.querySelectorAll(".title");
-  titles.forEach(title => {
-    title.addEventListener("click", () => {
-      title.classList.add("clicked");
-      setTimeout(() => title.classList.remove("clicked"), 400); 
-    });
-  });
-</script>
-<script>
-  const text = `Assalamu’alaikum Wr. Wb. 
-  Puji syukur kita panjatkan kehadirat Allah SWT karena berkat rahmat dan karunia-Nya, 
-  kita dapat berkumpul dalam suasana penuh semangat untuk memajukan dunia pendidikan. 
-  Selamat datang di website resmi sekolah kami, sebuah media informasi sekaligus sarana komunikasi 
-  bagi seluruh warga sekolah, orang tua, dan masyarakat luas. 
+    <script>
+      const titles = document.querySelectorAll(".title");
+      titles.forEach(title => {
+        title.addEventListener("click", () => {
+          title.classList.add("clicked");
+          setTimeout(() => title.classList.remove("clicked"), 400);
+        });
+      });
+    </script>
+    <script>
+      const text = `Assalamu’alaikum Wr. Wb.
+      Puji syukur kita panjatkan kehadirat Allah SWT karena berkat rahmat dan karunia-Nya,
+      kita dapat berkumpul dalam suasana penuh semangat untuk memajukan dunia pendidikan.
+      Selamat datang di website resmi sekolah kami, sebuah media informasi sekaligus sarana komunikasi
+      bagi seluruh warga sekolah, orang tua, dan masyarakat luas.
 
-  Website ini berisi berbagai informasi terkait kegiatan sekolah, prestasi siswa, program pendidikan, 
-  serta aktivitas guru dan tenaga kependidikan. Harapan kami, melalui website ini transparansi 
-  informasi pendidikan dapat terwujud, sekaligus menjadi ruang inspirasi dan motivasi 
-  untuk terus berkarya dan berprestasi. 
+      Website ini berisi berbagai informasi terkait kegiatan sekolah, prestasi siswa, program pendidikan,
+      serta aktivitas guru dan tenaga kependidikan. Harapan kami, melalui website ini transparansi
+      informasi pendidikan dapat terwujud, sekaligus menjadi ruang inspirasi dan motivasi
+      untuk terus berkarya dan berprestasi.
 
-  Mari bersama-sama kita wujudkan generasi muda yang berkarakter, berilmu, dan berdaya saing. 
-  Terima kasih atas dukungan semua pihak. Wassalamu’alaikum Wr. Wb.`;
+      Mari bersama-sama kita wujudkan generasi muda yang berkarakter, berilmu, dan berdaya saing.
+      Terima kasih atas dukungan semua pihak. Wassalamu’alaikum Wr. Wb.`;
 
-  let index = 0;
+      let index = 0;
 
-  function typeWriter() {
-    if (index < text.length) {
-      document.getElementById("typing-text").innerHTML += text.charAt(index);
-      index++;
-      setTimeout(typeWriter, 50); // kecepatan ngetik
-    }
-  }
-
-  window.onload = typeWriter;
-</script>
-<script>
-  const counters = document.querySelectorAll("h3[data-target]");
-  const speed = 50;
-
-  function runCounter(counter) {
-    const target = +counter.getAttribute("data-target");
-    let count = 0;
-    const increment = Math.ceil(target / speed);
-
-    const updateCount = () => {
-      if (count < target) {
-        count += increment;
-        counter.innerText = count;
-        setTimeout(updateCount, 30);
-      } else {
-        counter.innerText = target;
+      function typeWriter() {
+        if (index < text.length) {
+          document.getElementById("typing-text").innerHTML += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, 50); // kecepatan ngetik
+        }
       }
-    };
 
-    updateCount();
-  }
+      window.onload = typeWriter;
+    </script>
+    <script>
+      const counters = document.querySelectorAll("h3[data-target]");
+      const speed = 50;
 
-  // Pakai IntersectionObserver
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        runCounter(entry.target);
-        observer.unobserve(entry.target); // biar cuma sekali jalan
+      function runCounter(counter) {
+        const target = +counter.getAttribute("data-target");
+        let count = 0;
+        const increment = Math.ceil(target / speed);
+
+        const updateCount = () => {
+          if (count < target) {
+            count += increment;
+            counter.innerText = count;
+            setTimeout(updateCount, 30);
+          } else {
+            counter.innerText = target;
+          }
+        };
+
+        updateCount();
       }
-    });
-  }, { threshold: 0.5 }); // jalan kalau 50% elemen kelihatan
 
-  counters.forEach(counter => {
-    observer.observe(counter);
-  });
-</script>
+      // Pakai IntersectionObserver
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            runCounter(entry.target);
+            observer.unobserve(entry.target); // biar cuma sekali jalan
+          }
+        });
+      }, { threshold: 0.5 }); // jalan kalau 50% elemen kelihatan
 
-
+      counters.forEach(counter => {
+        observer.observe(counter);
+      });
+    </script>
   </body>
 </html>
