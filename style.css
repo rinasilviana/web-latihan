@@ -1,0 +1,540 @@
+   
+      /* Container & Title */
+      .container-fluid {
+        background-color: #f8f9fa;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      .gallery-title {
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 36px;
+        color: #1e3a8a;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      /* Card Styling */
+      .gallery-card {
+        border: none;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #fff;
+      }
+
+      .gallery-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Image zoom wrapper */
+      .gallery-img-wrapper {
+        overflow: hidden;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
+
+      .gallery-img-wrapper img {
+        transition: transform 0.5s ease;
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .gallery-card:hover .gallery-img-wrapper img {
+        transform: scale(1.08);
+      }
+
+      /* Card Text */
+      .gallery-card .card-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        color: #1e3a8a;
+      }
+
+      .gallery-card .card-text {
+        font-size: 0.95rem;
+        color: #6c757d;
+      }
+
+      /* Responsive spacing */
+      @media (max-width: 767.98px) {
+        .container-fluid {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
+      }
+
+      /* Button */
+      .btn-primary {
+        padding: 0.8rem 2.5rem;
+        font-weight: 600;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+      }
+      .btn-primary:hover {
+        background-color: #154a86;
+        color: #fff;
+      }
+   
+      /* Reset dan font */
+      .container-fluid {
+        padding: 4rem 2rem;
+        background: #fefefe;
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+      }
+
+      /* Judul utama */
+      h3.fw-bold {
+        font-size: 2.6rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      /* Baris atas */
+      .row.py-4 {
+        margin-bottom: 3rem;
+      }
+
+      /* Tombol modern */
+      .btn-outline-dark {
+        border: 2.5px solid #2c3e50;
+        color: #2c3e50;
+        padding: 0.75rem 2rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+        border-radius: 40px;
+        transition: all 0.4s ease;
+        box-shadow: 0 4px 15px rgba(44, 62, 80, 0.15);
+      }
+
+      .btn-outline-dark:hover {
+        background-color: #2c3e50;
+        color: #fff;
+        box-shadow: 0 8px 30px rgba(44, 62, 80, 0.3);
+        text-decoration: none;
+        transform: translateY(-3px);
+      }
+
+      /* Kotak carousel */
+      #carouselLeft, #carouselRight {
+        border-radius: 20px;
+        box-shadow: 0 12px 40px rgba(44, 62, 80, 0.1);
+        min-height: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem 2.5rem;
+        background: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      /* Efek hover pada kotak */
+      #carouselLeft:hover, #carouselRight:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 50px rgba(44, 62, 80, 0.18);
+      }
+
+      /* Warna soft untuk membedakan */
+      #carouselLeft {
+        border-left: 8px solid #3498db; /* biru elegan */
+      }
+
+      #carouselRight {
+        border-left: 8px solid #e67e22; /* oranye hangat */
+      }
+
+      /* Heading di kotak */
+      #carouselLeft h5, #carouselRight h5 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #34495e;
+        margin-bottom: 1rem;
+        letter-spacing: 0.03em;
+      }
+
+      /* Paragraf */
+      #carouselLeft p, #carouselRight p {
+        font-size: 1.15rem;
+        line-height: 1.7;
+        color: #555;
+      }
+
+      /* Responsive */
+      @media (max-width: 991.98px) {
+        .container-fluid {
+          padding: 3rem 1.5rem;
+        }
+
+        #carouselLeft, #carouselRight {
+          min-height: auto;
+          padding: 2rem 1.5rem;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        .btn-outline-dark {
+          width: 100%;
+          font-size: 1.2rem;
+          padding: 0.85rem 1rem;
+        }
+      }
+   
+      /* Animasi masuk dan keluar */
+      @keyframes fadeOut {
+        0% { opacity: 1; }
+        80% { opacity: 1; }
+        100% { opacity: 0; visibility: hidden; }
+      }
+
+      .welcome-text {
+        animation: fadeOut 5s ease-in-out forwards;
+        animation-delay: 2s; /* mulai fade out setelah 2 detik */
+      }
+
+
+ 
+      @keyframes tickerMove {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      .ticker-text:hover {
+        animation-play-state: paused;
+      }
+   
+      /* Efek hover untuk desktop */
+      .card-img-top {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .card-img-top:hover,
+      .card-img-top:focus {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+      }
+
+      /* Efek sentuh untuk mobile - pakai active */
+      .card-img-top:active {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+      }
+ /* Navbar dasar */
+.navbar-collapse {
+  background-color: #0749a5; /* biru tua elegan */
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+/* Menu utama */
+.navbar-nav .nav-link {
+  color: #e0e6f1; /* putih ke abu2 terang, lembut di mata */
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
+/* Link aktif */
+.navbar-nav .nav-link.active {
+  color: #a3b8d1; /* biru muda lembut */
+  background-color: rgba(19, 55, 156, 0.397);
+  box-shadow: 0 0 8px rgba(108, 162, 228, 0.6);
+}
+
+/* Hover & fokus pada link */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #cbd5e1; /* biru muda cerah */
+  background-color: rgba(18, 58, 143, 0.15);
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #09428b; /* sedikit lebih terang dari navbar */
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(73, 126, 201, 0.4);
+  padding: 0.5rem 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform-origin: top center;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  position: absolute;
+  min-width: 200px;
+}
+
+/* Dropdown menu saat aktif (Bootstrap sudah handle class show) */
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Item dropdown */
+.dropdown-item {
+  color: #e0e6f1;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover dan fokus dropdown item */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #0749a5;
+  color: #dbe9ff;
+  outline: none;
+  text-shadow: 0 0 3px rgba(219, 233, 255, 0.7);
+  cursor: pointer;
+}
+
+/* Penyesuaian dropdown toggle */
+.navbar-nav .dropdown-toggle::after {
+  border-top: 0.3em solid #0749a5; /* panah dropdown berwarna biru muda */
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+  vertical-align: middle;
+  margin-left: 0.3em;
+  transition: transform 0.3s ease;
+}
+
+/* Rotasi panah saat dropdown aktif */
+.navbar-nav .show > .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+
+/* Responsive kecil */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: #0749a5;
+    margin-top: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 1rem 1.5rem;
+  }
+}/* Card sambutan */
+.card {
+  background-color: #f8fafc; /* putih kebiruan lembut */
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px rgba(85, 147, 235, 0.3);
+}
+
+/* Gambar kepala sekolah */
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(51, 125, 230, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* Statistik kartu */
+.stat-card {
+  background: linear-gradient(135deg, #0749a5, #0749a5);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(31, 58, 95, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(72, 146, 250, 0.6);
+  cursor: pointer;
+}
+
+/* Nomor statistik */
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+/* Label statistik */
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* Animasi slide in dari kiri */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Class untuk sambutan dengan animasi dan padding kiri agar tidak mepet */
+.sambutan-slidein {
+  animation: slideInFromLeft 1s ease forwards;
+  padding-left: 2rem; /* Ruang ke kiri supaya gak mepet */
+}
+/* Container kiri-kanan pakai flexbox agar tinggi sama */
+.row.g-5.align-items-center {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* jarak antar kolom */
+}
+
+/* Kiri dan kanan sama tinggi */
+.col-lg-6 {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Card kiri (sambutan) full tinggi */
+.sambutan-slidein .card {
+  height: 100%;
+}
+
+/* Gambar tetap proporsional, maksimal tinggi supaya gak terlalu besar */
+.sambutan-slidein img {
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(35, 119, 236, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Batasi teks agar gak terlalu panjang ke bawah */
+.sambutan-text {
+  max-width: 420px;
+  line-height: 1.5;
+  max-height: calc(1.5em * 6); /* sekitar 6 baris */
+  overflow: hidden;
+  text-align: justify;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+}
+
+/* Judul styling */
+.sambutan-slidein h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0749a5;
+  margin-bottom: 1rem;
+}
+
+/* Statistik cards */
+.stat-card {
+  background: linear-gradient(135deg, #0749a5, #0b3a7a);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(31, 58, 95, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  height: 150px;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(72, 146, 250, 0.6);
+  cursor: pointer;
+}
+
+.stat-number {
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  color: #e0e7ff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .row.g-5.align-items-center {
+    flex-direction: column;
+  }
+  .col-lg-6 {
+    flex: 1 1 100%;
+    margin-bottom: 2rem;
+  }
+  .sambutan-text {
+    max-width: 100%;
+    max-height: none;
+    text-align: left;
+  }
+  .stat-card {
+    height: 130px;
+  }
+}
+
+/* Animasi slide in dari kiri */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.sambutan-slidein {
+  animation: slideInFromLeft 1s ease forwards;
+  padding-left: 2rem;
+}
+#typing-text::after {
+    content: '|';
+    animation: blink 1s step-start infinite;
+    margin-left: 2px;
+    color: #0749a5;
+    font-weight: bold;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
