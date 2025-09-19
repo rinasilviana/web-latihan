@@ -1,0 +1,521 @@
+
+.carousel-item {
+  transition: transform 1s ease, opacity 1s ease-in-out;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  transition: transform 1.5s ease-in-out, opacity 1s ease-in-out;
+}
+
+
+.carousel-item-next img,
+.carousel-item-prev img {
+  transform: scale(1.2); 
+}
+
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+  transition: background 1s ease-in-out;
+}
+
+.carousel-item:hover::before {
+  background: rgba(0, 0, 0, 0.7); 
+}
+
+.carousel-caption {
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.carousel-item-next .carousel-caption,
+.carousel-item-prev .carousel-caption {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.carousel-item.active .carousel-caption {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+.carousel-caption h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.carousel-caption p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #eee;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+
+.carousel-caption a.btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-caption a.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 50vh;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .carousel-caption a.btn {
+    font-size: 0.9rem;
+  }
+}
+
+.banner {
+  background-size: cover;
+  color: #132974;
+}
+
+.lingkaran {
+  width: 120px; 
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  color: #fff;
+
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.lingkaran i {
+  font-size: 3rem; 
+}
+.crop-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tim img {
+  width: 250px;
+  border: 10px solid #cccc;
+}
+a.social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #312626;
+  border-radius: 50%;
+  background-color: #ccaeae;
+  line-height: 40px;
+}
+.client img {
+  height: auto;
+  max-height: 50px;
+}
+.footer {
+  background-color: #222;
+  color: #eee;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  color: #eee;
+}
+
+.footer a:hover {
+  color: #f8b400;
+  text-decoration: underline;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer i {
+  color: #f8b400;
+}
+
+hr.bg-secondary {
+  opacity: 0.2;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+      /* Container & Title */
+      .container-fluid {
+        background-color: #f8f9fa;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      .gallery-title {
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 36px;
+        color: #1e3a8a;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      /* Card Styling */
+      .gallery-card {
+        border: none;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #fff;
+      }
+
+      .gallery-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Image zoom wrapper */
+      .gallery-img-wrapper {
+        overflow: hidden;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
+
+      .gallery-img-wrapper img {
+        transition: transform 0.5s ease;
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .gallery-card:hover .gallery-img-wrapper img {
+        transform: scale(1.08);
+      }
+
+      /* Card Text */
+      .gallery-card .card-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        color: #1e3a8a;
+      }
+
+      .gallery-card .card-text {
+        font-size: 0.95rem;
+        color: #6c757d;
+      }
+
+      /* Responsive spacing */
+      @media (max-width: 767.98px) {
+        .container-fluid {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
+      }
+
+      /* Button */
+      .btn-primary {
+        padding: 0.8rem 2.5rem;
+        font-weight: 600;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+      }
+      .btn-primary:hover {
+        background-color: #154a86;
+        color: #fff;
+      }
+         /* Reset dan font */
+      .container-fluid {
+        padding: 4rem 2rem;
+        background: #fefefe;
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+      }
+
+      /* Judul utama */
+      h3.fw-bold {
+        font-size: 2.6rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      /* Baris atas */
+      .row.py-4 {
+        margin-bottom: 3rem;
+      }
+
+      /* Tombol modern */
+      .btn-outline-dark {
+        border: 2.5px solid #2c3e50;
+        color: #2c3e50;
+        padding: 0.75rem 2rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+        border-radius: 40px;
+        transition: all 0.4s ease;
+        box-shadow: 0 4px 15px rgba(44, 62, 80, 0.15);
+      }
+
+      .btn-outline-dark:hover {
+        background-color: #2c3e50;
+        color: #fff;
+        box-shadow: 0 8px 30px rgba(44, 62, 80, 0.3);
+        text-decoration: none;
+        transform: translateY(-3px);
+      }
+
+      /* Kotak carousel */
+      #carouselLeft, #carouselRight {
+        border-radius: 20px;
+        box-shadow: 0 12px 40px rgba(44, 62, 80, 0.1);
+        min-height: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem 2.5rem;
+        background: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      /* Efek hover pada kotak */
+      #carouselLeft:hover, #carouselRight:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 50px rgba(44, 62, 80, 0.18);
+      }
+
+      /* Warna soft untuk membedakan */
+      #carouselLeft {
+        border-left: 8px solid #3498db; /* biru elegan */
+      }
+
+      #carouselRight {
+        border-left: 8px solid #e67e22; /* oranye hangat */
+      }
+
+      /* Heading di kotak */
+      #carouselLeft h5, #carouselRight h5 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #34495e;
+        margin-bottom: 1rem;
+        letter-spacing: 0.03em;
+      }
+
+      /* Paragraf */
+      #carouselLeft p, #carouselRight p {
+        font-size: 1.15rem;
+        line-height: 1.7;
+        color: #555;
+      }
+
+      /* Responsive */
+      @media (max-width: 991.98px) {
+        .container-fluid {
+          padding: 3rem 1.5rem;
+        }
+
+        #carouselLeft, #carouselRight {
+          min-height: auto;
+          padding: 2rem 1.5rem;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        .btn-outline-dark {
+          width: 100%;
+          font-size: 1.2rem;
+          padding: 0.85rem 1rem;
+        }
+      }
+    /* Animasi masuk dan keluar */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+.welcome-text {
+  animation: fadeOut 5s ease-in-out forwards;
+  animation-delay: 2s; /* mulai fade out setelah 2 detik */
+}
+
+/* Ticker Animasi */
+@keyframes tickerMove {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.ticker-text:hover {
+  animation-play-state: paused;
+}
+
+/* Efek hover untuk desktop */
+.card-img-top {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, transform 0.5s ease-in-out;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid transparent; /* Border transparan */
+  background-color: #f8f9fa; /* Warna latar belakang terang */
+}
+
+.card-img-top:hover,
+.card-img-top:focus {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  border: 2px solid #0056b3; /* Biru gelap */
+  background-color: #e7f1ff; /* Efek hover terang */
+}
+
+/* Dropdown Menu */
+.nav-item .dropdown-menu {
+  background-color: #0056b3; /* Biru gelap */
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-item .dropdown-item {
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item .dropdown-item:hover,
+.nav-item .dropdown-item:focus {
+  background-color: #0d3157; /* Biru gelap pada hover */
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+/* Efek Hover pada Navbar */
+.navbar {
+  background: linear-gradient(135deg, #0056b3, #135ba8);
+  border-bottom: 4px solid #0056b3; /* Biru lebih gelap */
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 18px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0056b3 !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Efek sentuh untuk mobile */
+.card-img-top:active {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background-color: #e7f1ff; /* Latar belakang saat aktif */
+}
+  .card {
+    transition: all 0.3s ease-in-out;
+    background-color: #f8f9fa; /* Soft background color */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .card:hover {
+    transform: translateY(-5px); /* Hover effect for card */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* More intense shadow on hover */
+  }
+
+  .btn-primary {
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: #084280;
+    transform: translateY(-2px); /* Button hover effect */
+  }
+
+  .form-control {
+    background-color: #ffffff;
+    border: 1px solid #ddd; /* Lighter border color */
+    box-shadow: none;
+    transition: border 0.3s ease-in-out;
+  }
+
+  .form-control:focus {
+    border-color: #003c7c; /* Blue focus border */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  .form-label {
+    font-weight: 500;
+  }
+
+  .card-body {
+    padding: 2rem;
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .btn-primary {
+      width: 100%;
+    }
+
+    .form-control {
+      padding: 1.25rem;
+    }
+  }
